@@ -37,8 +37,11 @@ samtools index ./bam_mapq30/cell_A.mapq30.bam
 ### II. Prepare a list of the single-cell bam files.
 
 Provide a file (e.g. “bamlist.txt”) with the following content,
+
 ./bam_mapq30/cell_A.mapq30.bam
+
 ./bam_mapq30/cell_B.mapq30.bam
+
 ./bam_mapq30/cell_C.mapq30.bam
 
 ### III. Perform CNV calling
