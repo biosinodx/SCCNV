@@ -3,7 +3,7 @@ SCCNV: a software tool for identifying copy number variation from single-cell wh
 
 Version 1.0
 
-Updated date: 2017.07.27
+Updated date: 2018.07.27
 
 #####
 ## Author and License
