@@ -56,6 +56,7 @@ bedtools makewindows -g ./resource/hg19.chrlength.txt -w 500000 ./cellsAtoC/hg19
 samtools ./cellsAtoC/hg19.bin500000.bed ../bam_mapq30/cell_A.mapq30.bam > ./cellsAtoC/cell_A.depth.bin500000.bed
 
 And skip the related step in SCCNV,
+
 python sccnv.py -i bamlist.txt -o cellsAtoC -k True -r True
 
 #####
