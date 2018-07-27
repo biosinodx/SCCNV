@@ -24,9 +24,9 @@ python modules os, argparse, math, numpy
 bedtools
 
 #####
-##USAGE
+## USAGE
 
-###I. Prepare bam files of every single cell for analysis
+### I. Prepare bam files of every single cell for analysis
 
 Below is an example for cell_A. I recommend filter out reads with mapq<30.
 
@@ -34,18 +34,18 @@ samtools view -b -q 30 ./bam/cell_A.bam > ./bam_mapq30/cell_A.mapq30.bam
 
 samtools index ./bam_mapq30/cell_A.mapq30.bam
 
-###II. Prepare a list of the single-cell bam files.
+### II. Prepare a list of the single-cell bam files.
 
 Provide a file (e.g. “bamlist.txt”) with the following content,
 ./bam_mapq30/cell_A.mapq30.bam
 ./bam_mapq30/cell_B.mapq30.bam
 ./bam_mapq30/cell_C.mapq30.bam
 
-###III. Perform CNV calling
+### III. Perform CNV calling
 
 python sccnv.py -i bamlist.txt -o cellsAtoC -k False -r True
 
-###IV. Tips
+### IV. Tips
 
 One can prepare bed files for calculation using bedtools and samtools (for every cell in paralleles),
 
@@ -59,7 +59,7 @@ And skip the related step in SCCNV,
 python sccnv.py -i bamlist.txt -o cellsAtoC -k True -r True
 
 #####
-##RELEASE NOTES
+## RELEASE NOTES
 
 v1.0 2018.07.26, release version.
 
