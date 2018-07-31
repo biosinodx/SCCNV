@@ -54,9 +54,9 @@ One can prepare bed files for calculation using bedtools and samtools (for every
 
 mkdir cellsAtoC
 
-bedtools makewindows -g ./resource/hg19.chrlength.txt -w 500000 ./cellsAtoC/hg19.bin500000.bed
+bedtools makewindows -g ./resource/hg19.chrlength.txt -w 500000 > ./cellsAtoC/hg19.bin500000.bed
 
-samtools ./cellsAtoC/hg19.bin500000.bed ../bam_mapq30/cell_A.mapq30.bam > ./cellsAtoC/cell_A.depth.bin500000.bed
+samtools bedcov ./cellsAtoC/hg19.bin500000.bed ../bam_mapq30/cell_A.mapq30.bam > ./cellsAtoC/cell_A.depth.bin500000.bed
 
 And skip the related step in SCCNV,
 
