@@ -35,7 +35,7 @@ parser.add_argument("-r", "--report", type=str, default=False, help="INPUT: repo
 args=parser.parse_args()
 print(args)
 
-os.system("mkdir " + args.odir)
+os.system("mkdir -p " + args.odir)
 
 ### 1. samtools / bedtools to calculate genome fragments ###
 cell=[]
