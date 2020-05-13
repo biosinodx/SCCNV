@@ -87,6 +87,10 @@ And skip the related step in SCCNV,
 
 python sccnv.py -i bamlist.txt -o cellsAtoC -k True -r True
 
+### V. Example data
+
+An example dataset was included in "sccnv_example.zip".
+
 #####
 ## NOTE
 
