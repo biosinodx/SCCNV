@@ -10,7 +10,7 @@ Updated date: 2020.04.10
 
 Author: Xiao Dong
 
-Email: biosinodx@gmail.com, xiao.dong@einstein.yu.edu
+Email: biosinodx@gmail.com, xiao.dong@einsteinmed.org
 
 Licensed under the GNU Affero General Public License version 3 or later
 
