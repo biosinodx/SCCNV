@@ -96,8 +96,6 @@ An example dataset is included in "sccnv_example_v1.0.2.zip". It includes (1) in
 
 (1) SCCNV aims to discover difference in CNV between every single cell in the bamlist.txt and the other cells in the bamlist.txt. When analyzing CNV of multiple tumor cells, it is not appropriate to include all tumor cells in the bamlist.txt. Instead, please use one tumor cell with two or more normal diploid cells in the bamlist.txt.
 
-(2) SCCNV only used 0-4 because the final copy number call was after multiple testing correction and I wished to minimize the numbers of hypothesis tested, i.e., 5 for 0-4. However, this will result in an under estimation if the real copy number exceed 4. Please check SCCNV intermediate files to make sure not exceeding 4.
-
 #####
 ## RELEASE NOTES
 
